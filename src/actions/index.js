@@ -19,10 +19,10 @@ export const passwordChanged = (text) => {
   }
 };
 
-export const pullOtherScreen = (text) => {
-  return {
-    type: types.PULL_OTHER_SCREEN
-  }
+export const pullCreateEmployee = () => {
+  return dispatch => dispatch({
+    type: types.PULL_CREATE_EMPLOYEE
+  });
 };
 
 
@@ -55,8 +55,11 @@ const loginUserSuccess = (dispatch, user) => {
     payload: user
   });
 
-  dispatch(NavigationActions.navigate({
-    routeName: 'OtherScreen'
+  dispatch(NavigationActions.reset({
+    index: 0,
+    actions: [
+      NavigationActions.navigate({ routeName: 'EmployeeList'})
+    ]
   }));
 
 };

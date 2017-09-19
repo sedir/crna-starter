@@ -6,4 +6,4 @@ export const PASSWORD_CHANGED = 'password_changed';
 export const LOGIN_USER_LOADING = 'login_user_loading';
 export const LOGIN_USER_SUCCESS = 'login_user_success';
 export const LOGIN_USER_FAIL = 'login_user_fail';
-export const PULL_OTHER_SCREEN = 'pull_other_screen';
+export const PULL_CREATE_EMPLOYEE = 'pull_create_employee';

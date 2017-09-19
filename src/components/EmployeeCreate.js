@@ -10,9 +10,9 @@ import firebase from 'firebase';
 import {emailChanged, passwordChanged, loginUser} from '../actions';
 import { BackHandler, NavigationActions } from "react-navigation";
 
-class OtherScreen extends Component {
+class EmployeeCreate extends Component {
   static navigationOptions = ({ navigation }) => ({
-    title: 'Nova tela',
+    title: 'Cadastrar funcionário',
   });
 
 
@@ -20,7 +20,7 @@ class OtherScreen extends Component {
     return (
       <Card>
         <CardSection>
-          <Text>Teste nova tela</Text>
+          <Text>Tela de cadastro</Text>
         </CardSection>
       </Card>
     );
@@ -33,4 +33,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(OtherScreen);
+export default connect(mapStateToProps)(EmployeeCreate);

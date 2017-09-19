@@ -4,9 +4,8 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {StyleSheet, View} from 'react-native';
-import {Card, CardSection} from "./common/index";
-import {Button, Form, Input, Item, Label, Text, Spinner, Content, Header, Body, Title, Container} from "native-base";
-import firebase from 'firebase';
+import {Card} from "./common/index";
+import {Button, Form, Input, Item, Label, Text, Spinner, Content, Header, Title, Container} from "native-base";
 import {emailChanged, passwordChanged, loginUser} from '../actions';
 
 class LoginForm extends Component {
