@@ -6,12 +6,12 @@ import {connect} from "react-redux";
 import {Card, CardSection} from "./common/index";
 import {Form, Input, Item, Label, Spinner, Text} from "native-base";
 import {pullCreateEmployee} from "../actions";
-import AddButton from "./common/HeaderButton";
+import HeaderButton from "./common/HeaderButton";
 
 class EmployeeList extends Component {
   static navigationOptions = ({navigation}) => ({
-    title: 'Lista de funcionários',
-    headerRight: <AddButton title="+" routeName="EmployeeCreate" />,
+    title: 'Funcionários',
+    headerRight: <HeaderButton routeName="EmployeeCreate" iconIos="ios-add" iconAndroid="md-add" />,
     headerBackTitle: 'Voltar',
   });
 

@@ -3,12 +3,18 @@
  */
 import React from 'react';
 import {connect} from "react-redux";
-import {Button} from "react-native";
+import {Button, Icon, Text} from "native-base";
 import {NavigationActions} from "react-navigation";
 
-const AddButton = ({title, action, routeName}) => {
+const AddButton = ({title, action, routeName, iconIos, iconAndroid}) => {
+  let text;
+  if (title)
+    text = <Text>{title}</Text>
+
   return (
-    <Button title={title} onPress={() => action(routeName)} />
+    <Button transparent onPress={() => action(routeName)}><Icon ios={iconIos} android={iconAndroid} />
+      {text}
+    </Button>
   )
 };
 
