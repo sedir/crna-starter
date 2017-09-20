@@ -5,6 +5,12 @@ import * as types from "./types";
 import firebase from 'firebase';
 import {NavigationActions} from "react-navigation";
 
+export const pullCreateEmployee = () => {
+  return dispatch => dispatch({
+    type: types.PULL_CREATE_EMPLOYEE
+  });
+};
+
 export const employeeUpdate = ({ prop, value }) => {
   return {
     type: types.EMPLOYEE_UPDATE,
@@ -20,6 +26,9 @@ export const employeeCreate = ({ name, phone, shift }) => {
       .push({name, phone, shift})
       .then(() => {
         dispatch(NavigationActions.back());
+        dispatch({
+          type: types.EMPLOYEE_CREATE
+        });
       });
   }
 };

@@ -19,13 +19,6 @@ export const passwordChanged = (text) => {
   }
 };
 
-export const pullCreateEmployee = () => {
-  return dispatch => dispatch({
-    type: types.PULL_CREATE_EMPLOYEE
-  });
-};
-
-
 export const loginUser = ({ email, password }) => {
   return (dispatch) => {
     dispatch({
