@@ -12,6 +12,7 @@ class EmployeeList extends Component {
   static navigationOptions = ({navigation}) => ({
     title: 'Lista de funcionários',
     headerRight: <AddButton title="+" routeName="EmployeeCreate" />,
+    headerBackTitle: 'Voltar',
   });
 
   render() {
