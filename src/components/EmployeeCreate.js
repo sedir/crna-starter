@@ -58,9 +58,9 @@ class EmployeeCreate extends Component {
               mode="dropdown"
               selectedValue={this.props.shift}
               onValueChange={value => this.props.employeeUpdate({prop: 'shift', value})}>
-              <Item label="Manhã" value="morning"/>
-              <Item label="Tarde" value="afternoon"/>
-              <Item label="Noite" value="night"/>
+              <Item label="Manhã" value="Manhã"/>
+              <Item label="Tarde" value="Tarde"/>
+              <Item label="Noite" value="Noite"/>
             </Picker>
           </Item>
           {this.renderButton()}

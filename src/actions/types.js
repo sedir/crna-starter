@@ -11,3 +11,4 @@ export const PULL_CREATE_EMPLOYEE = 'pull_create_employee';
 
 export const EMPLOYEE_UPDATE = 'employee_update';
 export const EMPLOYEE_CREATE = 'employee_create';
+export const EMPLOYEES_FETCH_SUCCESS = 'employee_fetch_success';
